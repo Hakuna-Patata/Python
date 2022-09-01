@@ -1,0 +1,9 @@
+API_Keys.py
+api_keys.*
+*.pyc
+.vscode
+.vscode/*
+__init__.py
+__pycache__
+*.db
+*.exe
