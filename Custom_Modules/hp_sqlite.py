@@ -5,6 +5,7 @@ This module is used to work with SQLite .db
 
 import sqlite3 as _sqlite3
 import pandas as _pd
+import dask.dataframe as _dd 
 
 def sql_to_df(db_path, sql_txt):
     """Query SQLite database/table and return results into pandas DataFrame

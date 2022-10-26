@@ -37,8 +37,8 @@ def kaggle_comp_download(kaggle_api, comp_name, file_list, download_path, force=
     if not isinstance(file_list.__iter__(), object):
         print(f"Argument Error: file_list must be iterable object!")
     else:
-        if not os.path.exists(download_path):
-            os.makedirs(download_path)
+        if not _os.path.exists(download_path):
+            _os.makedirs(download_path)
         for file_ in file_list:
             kaggle_api.competition_download_file(competition=comp_name, file_name=file_, path=download_path, force=force, quiet=quiet)
             print(f"{file_} successfully downloaded to {download_path}")
